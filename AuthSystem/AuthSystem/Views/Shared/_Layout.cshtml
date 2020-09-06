@@ -6,7 +6,7 @@
     <title>@ViewData["Title"] - AuthSystem</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    
+
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!--Bootsrap 4 CDN-->
@@ -17,15 +17,27 @@
 
     <!--Custom styles-->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .navbar-items{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    </style>
+    
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AuthSystem</a>
-                
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <partial name="_LoginPartial.cshtml"/>
+                    <partial name="_LoginPartial.cshtml" />
+                    <ul class="nav navbar-right">
+                        <li class="navbar-items"><a href="default.asp">Home</a></li>
+                        <li class="navbar-items"><a href="news.asp">News</a></li>
+                        <li class="navbar-items"><a href="contact.asp">Contact</a></li>
+                        <li class="navbar-items"><a href="about.asp">About</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
