@@ -6,47 +6,34 @@
     <title>@ViewData["Title"] - AuthSystem</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <!--Bootsrap 4 CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <!--Fontawesome CDN-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <!--Custom styles-->
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <style>
-        .navbar-items {
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-    </style>
-
-    <style>
-    body { background-image: url("https://spider.avcol.school.nz/Spider/custom/login-bg2.jpg?51bf0f4d-e9df-4fc7-bba4-e54fe5232c02");
-           background-repeat: no-repeat; }
-    </style>
-        <style>
-    body { background-image: url("https://spider.avcol.school.nz/Spider/custom/login-bg2.jpg?51bf0f4d-e9df-4fc7-bba4-e54fe5232c02");
-           background-repeat: no-repeat; }
-    </style>
-
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AuthSystem</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AvondaleSpider</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial.cshtml" />
-                    <ul class="nav navbar-right">
-                        <li class="navbar-items"><a href="defult.asp">Home</a></li>
-                        <li class="navbar-items"><a href="news.asp">News</a></li>
-                        <li class="navbar-items"><a href="contact.asp">Contact</a></li>
-                        <li class="navbar-items"><a href="about.asp">About</a></li>
+
+
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Aboutus">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
                     </ul>
+                </div>
+                <div class="topnav">
+                    <input type="text" placeholder="Search..">
                 </div>
             </div>
         </nav>
@@ -59,7 +46,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - AuthSystem - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2020 - School_Project_WebApplication - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
