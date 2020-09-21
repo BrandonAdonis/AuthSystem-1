@@ -33,7 +33,7 @@ namespace AuthSystem.Controllers
         {
             return View();
         }
-        public IActionResult Subjects()
+        public IActionResult SchoolSubjects()
         {
             return View();
         }
