@@ -16,8 +16,106 @@
         padding-bottom: 50px;
         padding-left: 80px;
     }
+    .sidenav {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+            .sidenav a:hover {
+                color: #fbdf00;
+            }
+    * {
+        box-sizing: border-box;
+    }
+
+    #myInput {
+        background-image: url('/css/searchicon.png');
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+    }
+
+    #myUL {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        #myUL li a {
+            border: 1px solid #ddd;
+            margin-top: -1px; /* Prevent double borders */
+            background-color: #f6f6f6;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block
+        }
+
+            #myUL li a:hover:not(.header) {
+                background-color: #eee;
+            }
+
+    .MathSearchOverlay {
+        position: fixed;
+        left: 2vw;
+        bottom: 6vw;
+        transform: scale(70%);
+        padding: 10px 10px 10px 10px;
+        background-color: #808080;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+    }
+
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+        /* Change the link color on hover */
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+    body {
+        font-family: "Lato", sans-serif;
+    }
 
 
+
+    .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+    }
 </style>
 
 
@@ -48,125 +146,17 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        #myInput {
-            background-image: url('/css/searchicon.png');
-            background-position: 10px 12px;
-            background-repeat: no-repeat;
-            width: 100%;
-            font-size: 16px;
-            padding: 12px 20px 12px 40px;
-            border: 1px solid #ddd;
-            margin-bottom: 12px;
-        }
-
-        #myUL {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-            #myUL li a {
-                border: 1px solid #ddd;
-                margin-top: -1px; /* Prevent double borders */
-                background-color: #f6f6f6;
-                padding: 12px;
-                text-decoration: none;
-                font-size: 18px;
-                color: black;
-                display: block
-            }
-
-                #myUL li a:hover:not(.header) {
-                    background-color: #eee;
-                }
-
-        .MathSearchOverlay {
-            position: fixed;
-            left: 2vw;
-            bottom: 6vw;
-            transform: scale(70%);
-            padding: 10px 10px 10px 10px;
-            background-color: #808080;
-        }
-    </style>
-</head>
-<body>
-
-
-
-
-
-
-    <div class="container-fluid">
-
-        <div class="MathSearchOverlay">
-            <h2 style="color:white">My Phonebook</h2>
-
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-
-
-            <ul id="myUL">
-                <li><a href="#">Adele</a></li>
-                <li><a href="#">Agnes</a></li>
-
-                <li><a href="#">Billy</a></li>
-                <li><a href="#">Bob</a></li>
-
-                <li><a href="#">Calvin</a></li>
-                <li><a href="#">Christina</a></li>
-                <li><a href="#">Cindy</a></li>
-            </ul>
-        </div>
-        <script>
-            function myFunction() {
-                var input, filter, ul, li, a, i, txtValue;
-                input = document.getElementById("myInput");
-                filter = input.value.toUpperCase();
-                ul = document.getElementById("myUL");
-                li = ul.getElementsByTagName("li");
-                for (i = 0; i < li.length; i++) {
-                    a = li[i].getElementsByTagName("a")[0];
-                    txtValue = a.textContent || a.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        li[i].style.display = "";
-                    } else {
-                        li[i].style.display = "none";
-                    }
-                }
-            }
-        </script>
-
-    </div>
-</body>
-</html>
+    <div class="sidenav">
+        <a href="#NCEA">NCEA</a>
+        <a href="#Teachers">Teachers</a>
+        <a href="#Pathways">Pathways</a>
+        <a href="#contact">Contact</a>
+        <a href="#Onlinelearning">Online Learning</a>
+        <a href="#Juniors">Junior</a>
+        <a href="#CIE">CIE</a>
+        <a href="#Resources">Resources</a>
+        <a href="#Support">Support</a>
+        <a href="#Careers">Careers</a>
+        <a href="#AvcolMathletes">Avcol Mathletes</a>
+        <a href="#Revison">Revision</a>
+</div>
