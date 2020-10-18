@@ -2,11 +2,7 @@
     ViewData["Title"] = "Math Page";
 }
 
-<div class="jumbotron">
-    <div class=" text-center">
-        <h1 style="font-size:80px"> Math Department</h1>
-    </div>
-</div>
+
 
 <style>
     .leftcol {
@@ -16,16 +12,17 @@
         padding-bottom: 50px;
         padding-left: 80px;
     }
+
     .sidenav {
-        height: 100%;
-        width: 160px;
+        
         position: fixed;
-        z-index: 1;
-        top: 0;
+        top: 25%;
         left: 0;
         background-color: #111;
         overflow-x: hidden;
-        padding-top: 20px;
+        z-index: 1;
+        float: left;
+        padding: 20px 20px 20px 20px;
     }
 
         .sidenav a {
@@ -39,6 +36,7 @@
             .sidenav a:hover {
                 color: #fbdf00;
             }
+
     * {
         box-sizing: border-box;
     }
@@ -76,29 +74,6 @@
                 background-color: #eee;
             }
 
-    .MathSearchOverlay {
-        position: fixed;
-        left: 2vw;
-        bottom: 6vw;
-        transform: scale(70%);
-        padding: 10px 10px 10px 10px;
-        background-color: #808080;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 200px;
-        background-color: #f1f1f1;
-    }
-
-    li a {
-        display: block;
-        color: #000;
-        padding: 8px 16px;
-        text-decoration: none;
-    }
 
         /* Change the link color on hover */
         li a:hover {
@@ -120,32 +95,44 @@
 </style>
 
 
-<div class="row">
-    <div class="col leftcol" style="background-color:navajowhite;">
-        <h2>Welcome to the Mathematics and Statistics department!</h2>
 
-        <h4>CLASS PAGES AND OTHER ONLINE RESOURCES</h4>
 
-        <p>Looking for resources and materials from your class?</p>
-        <p>Go to the online learning page to find links to helpful websites and online tools, and your class page.</p>
 
+<div class="container-fluid">
+
+    <div class="container-fluid" style="z-index:0; float:right">
+        <div class="jumbotron">
+            <div class=" text-center">
+                <h1 style="font-size:80px"> Math Department</h1>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col leftcol" style="background-color:navajowhite;">
+                <h2>Welcome to the Mathematics and Statistics department!</h2>
+
+                <h4>CLASS PAGES AND OTHER ONLINE RESOURCES</h4>
+
+                <p>Looking for resources and materials from your class?</p>
+                <p>Go to the online learning page to find links to helpful websites and online tools, and your class page.</p>
+
+            </div>
+
+            <div class="col leftcol" style="background-color:lavender;">
+
+                <h2>Latest news</h2>
+
+                <p>The myimaths password is now <u>heart</u></p>
+
+                <h1>GENERAL TUTORIALS</h1>
+                <p>
+                    Tuesday and Thursday after school (3:30 pm - 4:30 pm) in D23
+                    Need some help with what you are learning in class, homework, or preparation for an upcoming assessment?
+                    Then come along to the mathematics and statistics tutorials and our friendly teachers will support you with your learning :-)
+                </p>
+            </div>
+        </div>
     </div>
-
-    <div class="col leftcol" style="background-color:lavender;">
-
-        <h2>Latest news</h2>
-
-        <p>The myimaths password is now <u>heart</u></p>
-
-        <h1>GENERAL TUTORIALS</h1>
-        <p>
-            Tuesday and Thursday after school (3:30 pm - 4:30 pm) in D23
-            Need some help with what you are learning in class, homework, or preparation for an upcoming assessment?
-            Then come along to the mathematics and statistics tutorials and our friendly teachers will support you with your learning :-)
-        </p>
-    </div>
-</div>
-
 
     <div class="sidenav">
         <a href="#NCEA">NCEA</a>
@@ -160,4 +147,6 @@
         <a href="#Careers">Careers</a>
         <a href="#AvcolMathletes">Avcol Mathletes</a>
         <a href="#Revison">Revision</a>
+    </div>
+
 </div>
