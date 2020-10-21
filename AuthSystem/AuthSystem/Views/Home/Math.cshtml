@@ -4,7 +4,11 @@
 
 
 
+
 <style>
+
+
+
     .leftcol {
         border: 5px solid black;
         padding-top: 50px;
@@ -14,7 +18,6 @@
     }
 
     .sidenav {
-        
         position: fixed;
         top: 25%;
         left: 0;
@@ -75,11 +78,11 @@
             }
 
 
-        /* Change the link color on hover */
-        li a:hover {
-            background-color: #555;
-            color: white;
-        }
+    /* Change the link color on hover */
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
 
     body {
         font-family: "Lato", sans-serif;
@@ -92,61 +95,75 @@
         font-size: 28px; /* Increased text to enable scrolling */
         padding: 0px 10px;
     }
+
+    #grad1 {
+        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    }
+
+
 </style>
 
+<body>
 
 
 
+    <div class="container-fluid">
 
-<div class="container-fluid">
+        <div class="container-fluid" style="z-index:0; float:right">
+            <div class="text-center">
 
-    <div class="container-fluid" style="z-index:0; float:right">
-        <div class="jumbotron">
-            <div class=" text-center">
-                <h1 style="font-size:80px"> Math Department</h1>
+            </div>
+            <div id="grad1" style="text-align:center;margin:auto;color:#888888;font-size:80px;font-weight:bold">
+                Math Department
+            </div>
+
+
+
+            <div class="row">
+                <div class="col leftcol" style="background-color:navajowhite;">
+                    <h2>Welcome to the Mathematics and Statistics department!</h2>
+
+                    <h4>CLASS PAGES AND OTHER ONLINE RESOURCES</h4>
+
+                    <p>Looking for resources and materials from your class?</p>
+                    <p>Go to the online learning page to find links to helpful websites and online tools, and your class page.</p>
+
+                </div>
+
+                <div class="col leftcol" style="background-color:lavender;">
+
+                    <h2>Latest news</h2>
+
+                    <p>The myimaths password is now <u>heart</u></p>
+
+                    <h1>GENERAL TUTORIALS</h1>
+                    <p>
+                        Tuesday and Thursday after school (3:30 pm - 4:30 pm) in D23
+                        Need some help with what you are learning in class, homework, or preparation for an upcoming assessment?
+                        Then come along to the mathematics and statistics tutorials and our friendly teachers will support you with your learning :-)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="sidenav">
+                <a href="#NCEA">NCEA</a>
+                <a href="#Teachers">Teachers</a>
+                <a href="#Pathways">Pathways</a>
+                <a href="#contact">Contact</a>
+                <a href="#Onlinelearning">Online Learning</a>
+                <a href="#Juniors">Junior</a>
+                <a href="#CIE">CIE</a>
+                <a href="#Resources">Resources</a>
+                <a href="#Support">Support</a>
+                <a href="#Careers">Careers</a>
+                <a href="#AvcolMathletes">Avcol Mathletes</a>
+                <a href="#Revison">Revision</a>
             </div>
 
         </div>
-        <div class="row">
-            <div class="col leftcol" style="background-color:navajowhite;">
-                <h2>Welcome to the Mathematics and Statistics department!</h2>
-
-                <h4>CLASS PAGES AND OTHER ONLINE RESOURCES</h4>
-
-                <p>Looking for resources and materials from your class?</p>
-                <p>Go to the online learning page to find links to helpful websites and online tools, and your class page.</p>
-
-            </div>
-
-            <div class="col leftcol" style="background-color:lavender;">
-
-                <h2>Latest news</h2>
-
-                <p>The myimaths password is now <u>heart</u></p>
-
-                <h1>GENERAL TUTORIALS</h1>
-                <p>
-                    Tuesday and Thursday after school (3:30 pm - 4:30 pm) in D23
-                    Need some help with what you are learning in class, homework, or preparation for an upcoming assessment?
-                    Then come along to the mathematics and statistics tutorials and our friendly teachers will support you with your learning :-)
-                </p>
-            </div>
-        </div>
     </div>
 
-    <div class="sidenav">
-        <a href="#NCEA">NCEA</a>
-        <a href="#Teachers">Teachers</a>
-        <a href="#Pathways">Pathways</a>
-        <a href="#contact">Contact</a>
-        <a href="#Onlinelearning">Online Learning</a>
-        <a href="#Juniors">Junior</a>
-        <a href="#CIE">CIE</a>
-        <a href="#Resources">Resources</a>
-        <a href="#Support">Support</a>
-        <a href="#Careers">Careers</a>
-        <a href="#AvcolMathletes">Avcol Mathletes</a>
-        <a href="#Revison">Revision</a>
-    </div>
+</body>
 
-</div>
