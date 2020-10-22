@@ -2,72 +2,72 @@
     ViewData["Title"] = "Subjects";
 }
 
+
+
 <div class="text-center">
     <h1 class="display-4">Subjects</h1>
     <p>Learn about subjects your children can take and the teachers </p>
 </div>
 
 
+
+
+
+<style>
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+        grid-gap: 1px;
+        padding: 10px;
+    }
+
+        .grid-container > div {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+
+   
+</style>
+
+
+
+
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        .dropbtn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-        }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".item1").click(function () {
+                location.replace("Math")
+            });
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+            $(".item2").click(function () {
+                location.replace("English")
+            });
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
+            $(".item3").click(function () {
+                location.replace("PhyicalEdu")
+            });
 
-            .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
+            $(".item4").click(function () {
+                location.replace("Sciences")
+            });
 
-                .dropdown-content a:hover {
-                    background-color: #ddd;
-                }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover .dropbtn {
-            background-color: #3e8e41;
-        }
-    </style>
+            $(".item5").click(function () {
+                location.replace("Technologies")
+            });
+        });
+    </script>
 </head>
 
+<div class="grid-container">
+    <div class="item1" style="background-image:url('~/img/image1.png')">Math</div>
+    <div class="item2">English</div>
+    <div class="item3">Phyical Education</div>
+    <div class="item4">Sciences</div>
+    <div class="item5">Technologies</div>
+</div>
 
-
-<body>
-    <div class="dropdown">
-        <button class="dropbtn">Dropdown</button>
-        <div class="dropdown-content">
-            <a asp-area="" asp-controller="Home" asp-action="Math">Math</a>
-            <a asp-area="" asp-controller="Home" asp-action="English">English</a>
-            <a asp-area="" asp-controller="Home" asp-action="PhyicalEdu">Phyical Education</a>
-            <a asp-area="" asp-controller="Home" asp-action="Sciences">Sciences</a>
-            <a asp-area="" asp-controller="Home" asp-action="Technologies">Technologies</a>
-        </div>
-    </div>
-</body>
-
-
-<img src="/Images/UserUploadedImages/11/early_learning_hover.jpg" alt="Early Learning in Private Girls School Sydney" style="border: 0px solid;" title="Early Learning in Private Girls School Sydney">
