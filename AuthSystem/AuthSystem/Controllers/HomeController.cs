@@ -63,6 +63,54 @@ namespace AuthSystem.Controllers
         {
             return View();
         }
+        public IActionResult NCEA()
+        {
+            return View();
+        }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        public IActionResult CIE()
+        {
+            return View();
+        }
+        public IActionResult Careers()
+        {
+            return View();
+        }
+        public IActionResult Teacher()
+        {
+            return View();
+        }
+        public IActionResult Pathways()
+        {
+            return View();
+        }
+        public IActionResult OnlineLearning()
+        {
+            return View();
+        }
+        public IActionResult Junior()
+        {
+            return View();
+        }
+        public IActionResult Resources()
+        {
+            return View();
+        }
+        public IActionResult Support()
+        {
+            return View();
+        }
+        public IActionResult AvcolMathletes()
+        {
+            return View();
+        }
+        public IActionResult Revision()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
