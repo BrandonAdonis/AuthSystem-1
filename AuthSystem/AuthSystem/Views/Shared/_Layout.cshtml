@@ -26,9 +26,6 @@
 
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Aboutus">About us</a>
                         </li>
                         <li class="nav-item">
@@ -41,7 +38,10 @@
                 </div>
 
                 <div class="topnav">
-                    <input type="text" placeholder="Search..">
+                    <input type="search" data-hook="input" aria-label="Search..."
+                           placeholder="Search..." name="search" autocomplete="off" role="combobox"
+                           aria-autocomplete="both" aria-owns="SearchBox134-inputwithoptions-content" aria-expanded="true" 
+                           class="input3373328907__nativeInput" value="">
                 </div>
             </div>
         </nav>

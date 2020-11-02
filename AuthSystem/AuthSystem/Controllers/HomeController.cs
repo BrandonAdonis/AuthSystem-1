@@ -63,6 +63,15 @@ namespace AuthSystem.Controllers
         {
             return View();
         }
+        public IActionResult NCEA()
+        {
+            return View();
+        }
+        public IActionResult SearchResults()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
