@@ -1,53 +1,145 @@
-﻿@{
-    ViewData["Title"] = "Avondale Teachers";
-}
+﻿
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to Avondale Teachers</h1>
-    <p>This is the page to learn about what avondale teachers is about</p>
-</div>
+        html {
+            box-sizing: border-box;
+        }
 
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+            .container::after, .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            .button:hover {
+                background-color: #555;
+            }
+    </style>
+</head>
 <body>
 
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>Some text about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+    </div>
 
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
 
-    <div class="container-fluid">
-
-        <div class="container-fluid" style="z-index:0; float:right">
-            <div class="text-center">
-
-            </div>
-            <div id="grad1" style="text-align:center;margin:auto;color:#888888;font-size:80px;font-weight:bold">
-                Math Department
-            </div>
-
-
-
-            <div class="row">
-                <div class="col leftcol" style="background-color:navajowhite;">
-                    <h2>Welcome to the Mathematics and Statistics department!</h2>
-
-                    <h4>CLASS PAGES AND OTHER ONLINE RESOURCES</h4>
-
-                    <p>Looking for resources and materials from your class?</p>
-                    <p>Go to the online learning page to find links to helpful websites and online tools, and your class page.</p>
-
-                </div>
-
-                <div class="col leftcol" style="background-color:lavender;">
-
-                    <h2>Latest news</h2>
-
-                    <p>The myimaths password is now <u>heart</u></p>
-
-                    <h1>GENERAL TUTORIALS</h1>
-                    <p>
-                        Tuesday and Thursday after school (3:30 pm - 4:30 pm) in D23
-                        Need some help with what you are learning in class, homework, or preparation for an upcoming assessment?
-                        Then come along to the mathematics and statistics tutorials and our friendly teachers will support you with your learning :-)
-                    </p>
+                <img src="~/img/Avondale Priniple.webp" alt="Mrs Watkinson" style="width:100%">
+                <div class="container">
+                    <h2>Mrs Watkinson</h2>
+                    <p class="title">Avondale College Princle</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>Princple@avcol.school.nz</p>
+                    <p><button class="button">Contact</button></p>
                 </div>
             </div>
-         </div>
         </div>
+
+        <div class="column">
+            <div class="card">
+
+                <img src="~/img/Avondale Our Team.webp" alt="Avondale Important Staff" style="width:100%">
+                <div class="container">
+                    <h2>Important Staff members</h2>
+                    <p class="title">Staff Memebers</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>Staff@avcol.school.nz</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <div class="card">
+
+                <img src="~/img/Guidance.webp" alt="Guidence Team" style="width:100%">
+                <div class="container">
+                    <h3>Jin Tai</h3>
+                    <h3>Dave McMillan</h3>
+                    <h3>Louise Jennings</h3>
+                    <h3>Valenisia Sinisa</h3>
+                    <p class="title">The Guidence Team</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>Guidence@avcol.school.nz</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <div class="card">
+
+                <img src="~/img/Health.webp" alt="Health Clinic" style="width:100%">
+                <div class="container">
+                    <h3>Hannah Normington</h3>
+                   <33> Heather Playle</33>
+                    <h3>Susan Brown</h3>
+
+
+                    <p class="title">The Health Clinic</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>health@avcol.school.nz</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </body>

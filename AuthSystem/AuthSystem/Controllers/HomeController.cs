@@ -29,10 +29,6 @@ namespace AuthSystem.Controllers
         {
             return View();
         }
-        public IActionResult Aboutus()
-        {
-            return View();
-        }
         public IActionResult SchoolSubjects()
         {
             return View();
@@ -68,6 +64,14 @@ namespace AuthSystem.Controllers
             return View();
         }
         public IActionResult SearchResults()
+        {
+            return View();
+        }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        public IActionResult AboutUs()
         {
             return View();
         }
